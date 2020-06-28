@@ -1,0 +1,120 @@
+c:\users\hgonzalez\documents\visual studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Ultimo\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Ultimo\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Ultimo\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmTipoDeCliente.resources
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.xml
+F:\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmClientes.resources
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmTipoDeCliente.resources
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmClientes.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmTipoDeCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\Libros\obj\Debug\Libros.Consulta.FrmBuscarCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmClientes.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmTipoDeCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Consulta.FrmBuscarCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.exe.config
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.exe
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\Libros.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmClientes.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Catalogos.frmTipoDeCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Consulta.FrmBuscarCliente.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.frmPrincipal.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Operaciones.frmAlquiler.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Operaciones.frmDatosAlquiler.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Properties.Resources.resources
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.csproj.GenerateResource.Cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Operaciones.frmAlquiler.resources
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\Libros\obj\Debug\Libros.Operaciones.frmDatosAlquiler.resources

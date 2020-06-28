@@ -1,0 +1,62 @@
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+F:\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+F:\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosEDM\obj\Debug\LibrosEDM.pdb

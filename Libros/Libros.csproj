@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{018B8995-96E8-4082-8DF6-80D1DBBEF416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Libros</RootNamespace>
+    <AssemblyName>Libros</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogos\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\frmTipoDeCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\frmTipoDeCliente.Designer.cs">
+      <DependentUpon>frmTipoDeCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta\FrmBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\FrmBuscarCliente.Designer.cs">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\frmAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operaciones\frmAlquiler.Designer.cs">
+      <DependentUpon>frmAlquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\frmDatosAlquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operaciones\frmDatosAlquiler.Designer.cs">
+      <DependentUpon>frmDatosAlquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrestamosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamosDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrestamosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Catalogos\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\frmTipoDeCliente.resx">
+      <DependentUpon>frmTipoDeCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta\FrmBuscarCliente.resx">
+      <DependentUpon>FrmBuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operaciones\frmAlquiler.resx">
+      <DependentUpon>frmAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operaciones\frmDatosAlquiler.resx">
+      <DependentUpon>frmDatosAlquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="PrestamosDataSet.xsc">
+      <DependentUpon>PrestamosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PrestamosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrestamosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PrestamosDataSet.xss">
+      <DependentUpon>PrestamosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PrestamosDataSet1.xsc">
+      <DependentUpon>PrestamosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PrestamosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PrestamosDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PrestamosDataSet1.xss">
+      <DependentUpon>PrestamosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\LibrosEDM.ModeloAplicacion.usp_ObtenerAlqClte_Result.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibrosDAO\LibrosDAO.csproj">
+      <Project>{22abf51b-3d43-4ed7-9763-fc47945fd725}</Project>
+      <Name>LibrosDAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibrosEDM\LibrosEDM.csproj">
+      <Project>{fe6ab75b-db76-474e-a634-61e3cdaa508f}</Project>
+      <Name>LibrosEDM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

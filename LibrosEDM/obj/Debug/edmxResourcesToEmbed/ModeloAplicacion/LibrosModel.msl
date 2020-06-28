@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibrosModelStoreContainer" CdmEntityContainer="LibrosModelContainer">
+    <EntitySetMapping Name="Materias">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Materia)">
+        <MappingFragment StoreEntitySet="Materias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDeMateria" ColumnName="CodigoDeMateria" />
+          <ScalarProperty Name="DescripcionDeLaMateria" ColumnName="DescripcionDeLaMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Idiomas">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Idioma)">
+        <MappingFragment StoreEntitySet="Idiomas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelIdioma" ColumnName="CodigoDelIdioma" />
+          <ScalarProperty Name="DescripcionDelIdioma" ColumnName="DescripcionDelIdioma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Editoriales">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Editorial)">
+        <MappingFragment StoreEntitySet="Editoriales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDeLaEditorial" ColumnName="CodigoDeLaEditorial" />
+          <ScalarProperty Name="DescripcionDeLaEditorial" ColumnName="DescripcionDeLaEditorial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TiposDeCliente">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.TipoDeCliente)">
+        <MappingFragment StoreEntitySet="TiposDeCliente">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoTipoDeCliente" ColumnName="CodigoTipoDeCliente" />
+          <ScalarProperty Name="DescripcionTipoDeCliente" ColumnName="DescripcionTipoDeCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadosDelLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.EstadoDelLibro)">
+        <MappingFragment StoreEntitySet="EstadosDelLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoEstadoDelLibro" ColumnName="CodigoEstadoDelLibro" />
+          <ScalarProperty Name="DescripcionEstadoDelLibro" ColumnName="DescripcionEstadoDelLibro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Libros">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Libro)">
+        <MappingFragment StoreEntitySet="Libros">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelLibro" ColumnName="CodigoDelLibro" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="MateriaId" ColumnName="MateriaId" />
+          <ScalarProperty Name="IdiomaId" ColumnName="IdiomaId" />
+          <ScalarProperty Name="EditorialId" ColumnName="EditorialId" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Autores">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Autor)">
+        <MappingFragment StoreEntitySet="Autores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelAutor" ColumnName="CodigoDelAutor" />
+          <ScalarProperty Name="NombresDelAutor" ColumnName="NombresDelAutor" />
+          <ScalarProperty Name="ApellidosDelAutor" ColumnName="ApellidosDelAutor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetallesDeAutor">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.DetalleDeAutor)">
+        <MappingFragment StoreEntitySet="DetallesDeAutor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LibroId" ColumnName="LibroId" />
+          <ScalarProperty Name="AutorId" ColumnName="AutorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CopiasDeLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.CopiaDeLibro)">
+        <MappingFragment StoreEntitySet="CopiasDeLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDeCopia" ColumnName="NumeroDeCopia" />
+          <ScalarProperty Name="EstadoDelLibroId" ColumnName="EstadoDelLibroId" />
+          <ScalarProperty Name="LibroId" ColumnName="LibroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlquileresDeLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.AlquilerDeLibro)">
+        <MappingFragment StoreEntitySet="AlquileresDeLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDeAlquiler" ColumnName="CodigoDeAlquiler" />
+          <ScalarProperty Name="FechaDelAlquiler" ColumnName="FechaDelAlquiler" />
+          <ScalarProperty Name="FechaEstimadaDevolucion" ColumnName="FechaEstimadaDevolucion" />
+          <ScalarProperty Name="FechaRealDevolucion" ColumnName="FechaRealDevolucion" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="CopiaDeLibroId" ColumnName="CopiaDeLibroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Cliente)">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelCliente" ColumnName="CodigoDelCliente" />
+          <ScalarProperty Name="NombresDelCliente" ColumnName="NombresDelCliente" />
+          <ScalarProperty Name="ApellidosDelCliente" ColumnName="ApellidosDelCliente" />
+          <ScalarProperty Name="TipoDeClienteId" ColumnName="TipoDeClienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_BuscarCliente" FunctionName="LibrosModel.Store.usp_BuscarCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibrosModel.usp_BuscarCliente_Result">
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Tipos" ColumnName="Tipos" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ObtenerAlqClte" FunctionName="LibrosModel.Store.usp_ObtenerAlqClte">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LibrosModel.usp_ObtenerAlqClte_Result">
+          <ScalarProperty Name="CodigoDeAlquiler" ColumnName="CodigoDeAlquiler" />
+          <ScalarProperty Name="FechaDelAlquiler" ColumnName="FechaDelAlquiler" />
+          <ScalarProperty Name="FechaEstimadaDevolucion" ColumnName="FechaEstimadaDevolucion" />
+          <ScalarProperty Name="idAlq" ColumnName="idAlq" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idCopia" ColumnName="idCopia" />
+          <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+          <ScalarProperty Name="NumeroDeCopia" ColumnName="NumeroDeCopia" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

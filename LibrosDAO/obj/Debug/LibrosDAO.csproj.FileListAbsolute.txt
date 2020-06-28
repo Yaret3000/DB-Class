@@ -1,0 +1,71 @@
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Documents\Visual Studio 2015\Projects\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll.config
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez\Desktop\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.xml
+F:\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+F:\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll.config
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.xml
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+F:\Clases 2019\Ejercios Clase\Video programacion catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto hasta Catalogos\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\proyecto Maestro Detalle\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll.config
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosDAO.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\LibrosEDM.pdb
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.csprojResolveAssemblyReference.cache
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.dll
+C:\Users\hgonzalez.UNAN\Desktop\Proyecto Consultas\PrestamosDeLibros\LibrosDAO\obj\Debug\LibrosDAO.pdb

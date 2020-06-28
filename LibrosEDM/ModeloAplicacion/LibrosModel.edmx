@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LibrosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AlquileresDeLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDeAlquiler" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="FechaDelAlquiler" Type="datetime" Nullable="false" />
+          <Property Name="FechaEstimadaDevolucion" Type="datetime" Nullable="false" />
+          <Property Name="FechaRealDevolucion" Type="datetime" Nullable="false" />
+          <Property Name="ClienteId" Type="int" Nullable="false" />
+          <Property Name="CopiaDeLibroId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Autores">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDelAutor" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="NombresDelAutor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ApellidosDelAutor" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDelCliente" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="NombresDelCliente" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApellidosDelCliente" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TipoDeClienteId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CopiasDeLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroDeCopia" Type="int" Nullable="false" />
+          <Property Name="EstadoDelLibroId" Type="int" Nullable="false" />
+          <Property Name="LibroId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DetallesDeAutor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LibroId" Type="int" Nullable="false" />
+          <Property Name="AutorId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Editoriales">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDeLaEditorial" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DescripcionDeLaEditorial" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EstadosDelLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoEstadoDelLibro" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DescripcionEstadoDelLibro" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Idiomas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDelIdioma" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DescripcionDelIdioma" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Libros">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDelLibro" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="Titulo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MateriaId" Type="int" Nullable="false" />
+          <Property Name="IdiomaId" Type="int" Nullable="false" />
+          <Property Name="EditorialId" Type="int" Nullable="false" />
+          <Property Name="ISBN" Type="char" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Materias">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodigoDeMateria" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="DescripcionDeLaMateria" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AutorDetalleDeAutor">
+          <End Role="Autores" Type="Self.Autores" Multiplicity="1" />
+          <End Role="DetallesDeAutor" Type="Self.DetallesDeAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Autores">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetallesDeAutor">
+              <PropertyRef Name="AutorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClienteAlquilerDeLibro">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="AlquileresDeLibro" Type="Self.AlquileresDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AlquileresDeLibro">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CopiaDeLibroAlquilerDeLibro">
+          <End Role="CopiasDeLibro" Type="Self.CopiasDeLibro" Multiplicity="1" />
+          <End Role="AlquileresDeLibro" Type="Self.AlquileresDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CopiasDeLibro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AlquileresDeLibro">
+              <PropertyRef Name="CopiaDeLibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EditorialLibro">
+          <End Role="Editoriales" Type="Self.Editoriales" Multiplicity="1" />
+          <End Role="Libros" Type="Self.Libros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Editoriales">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libros">
+              <PropertyRef Name="EditorialId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EstadoDelLibroCopiaDeLibro">
+          <End Role="EstadosDelLibro" Type="Self.EstadosDelLibro" Multiplicity="1" />
+          <End Role="CopiasDeLibro" Type="Self.CopiasDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadosDelLibro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CopiasDeLibro">
+              <PropertyRef Name="EstadoDelLibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IdiomaLibro">
+          <End Role="Idiomas" Type="Self.Idiomas" Multiplicity="1" />
+          <End Role="Libros" Type="Self.Libros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idiomas">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libros">
+              <PropertyRef Name="IdiomaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LibroCopiaDeLibro">
+          <End Role="Libros" Type="Self.Libros" Multiplicity="1" />
+          <End Role="CopiasDeLibro" Type="Self.CopiasDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libros">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CopiasDeLibro">
+              <PropertyRef Name="LibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LibroDetalleDeAutor">
+          <End Role="Libros" Type="Self.Libros" Multiplicity="1" />
+          <End Role="DetallesDeAutor" Type="Self.DetallesDeAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libros">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetallesDeAutor">
+              <PropertyRef Name="LibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MateriaLibro">
+          <End Role="Materias" Type="Self.Materias" Multiplicity="1" />
+          <End Role="Libros" Type="Self.Libros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Materias">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libros">
+              <PropertyRef Name="MateriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="usp_BuscarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Nom" Type="varchar" Mode="In" />
+          <Parameter Name="Ape" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_ObtenerAlqClte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="idCliente" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="LibrosModelStoreContainer">
+          <EntitySet Name="AlquileresDeLibro" EntityType="Self.AlquileresDeLibro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Autores" EntityType="Self.Autores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CopiasDeLibro" EntityType="Self.CopiasDeLibro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetallesDeAutor" EntityType="Self.DetallesDeAutor" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Editoriales" EntityType="Self.Editoriales" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EstadosDelLibro" EntityType="Self.EstadosDelLibro" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Idiomas" EntityType="Self.Idiomas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Libros" EntityType="Self.Libros" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Materias" EntityType="Self.Materias" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AutorDetalleDeAutor" Association="Self.FK_AutorDetalleDeAutor">
+            <End Role="Autores" EntitySet="Autores" />
+            <End Role="DetallesDeAutor" EntitySet="DetallesDeAutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClienteAlquilerDeLibro" Association="Self.FK_ClienteAlquilerDeLibro">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="AlquileresDeLibro" EntitySet="AlquileresDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CopiaDeLibroAlquilerDeLibro" Association="Self.FK_CopiaDeLibroAlquilerDeLibro">
+            <End Role="CopiasDeLibro" EntitySet="CopiasDeLibro" />
+            <End Role="AlquileresDeLibro" EntitySet="AlquileresDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EditorialLibro" Association="Self.FK_EditorialLibro">
+            <End Role="Editoriales" EntitySet="Editoriales" />
+            <End Role="Libros" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EstadoDelLibroCopiaDeLibro" Association="Self.FK_EstadoDelLibroCopiaDeLibro">
+            <End Role="EstadosDelLibro" EntitySet="EstadosDelLibro" />
+            <End Role="CopiasDeLibro" EntitySet="CopiasDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IdiomaLibro" Association="Self.FK_IdiomaLibro">
+            <End Role="Idiomas" EntitySet="Idiomas" />
+            <End Role="Libros" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LibroCopiaDeLibro" Association="Self.FK_LibroCopiaDeLibro">
+            <End Role="Libros" EntitySet="Libros" />
+            <End Role="CopiasDeLibro" EntitySet="CopiasDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LibroDetalleDeAutor" Association="Self.FK_LibroDetalleDeAutor">
+            <End Role="Libros" EntitySet="Libros" />
+            <End Role="DetallesDeAutor" EntitySet="DetallesDeAutor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MateriaLibro" Association="Self.FK_MateriaLibro">
+            <End Role="Materias" EntitySet="Materias" />
+            <End Role="Libros" EntitySet="Libros" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LibrosModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="LibrosModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Materias" EntityType="LibrosModel.Materia" />
+          <EntitySet Name="Idiomas" EntityType="LibrosModel.Idioma" />
+          <EntitySet Name="Editoriales" EntityType="LibrosModel.Editorial" />
+          <EntitySet Name="EstadosDelLibro" EntityType="LibrosModel.EstadoLibro" />
+          <EntitySet Name="Libros" EntityType="LibrosModel.Libro" />
+          <EntitySet Name="Autores" EntityType="LibrosModel.Autor" />
+          <AssociationSet Name="MateriaLibro" Association="LibrosModel.MateriaLibro">
+            <End Role="Materia" EntitySet="Materias" />
+            <End Role="Libro" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="IdiomaLibro" Association="LibrosModel.IdiomaLibro">
+            <End Role="Idioma" EntitySet="Idiomas" />
+            <End Role="Libro" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="EditorialLibro" Association="LibrosModel.EditorialLibro">
+            <End Role="Editorial" EntitySet="Editoriales" />
+            <End Role="Libro" EntitySet="Libros" />
+          </AssociationSet>
+          <EntitySet Name="DetallesDeAutor" EntityType="LibrosModel.DetalleDeAutor" />
+          <AssociationSet Name="LibroDetalleDeAutor" Association="LibrosModel.LibroDetalleDeAutor">
+            <End Role="Libro" EntitySet="Libros" />
+            <End Role="DetalleDeAutor" EntitySet="DetallesDeAutor" />
+          </AssociationSet>
+          <AssociationSet Name="AutorDetalleDeAutor" Association="LibrosModel.AutorDetalleDeAutor">
+            <End Role="Autor" EntitySet="Autores" />
+            <End Role="DetalleDeAutor" EntitySet="DetallesDeAutor" />
+          </AssociationSet>
+          <EntitySet Name="CopiasDeLibro" EntityType="LibrosModel.CopiaLibro" />
+          <AssociationSet Name="EstadoDelLibroCopiaDeLibro" Association="LibrosModel.EstadoDelLibroCopiaDeLibro">
+            <End Role="EstadoDelLibro" EntitySet="EstadosDelLibro" />
+            <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+          </AssociationSet>
+          <EntitySet Name="AlquileresDeLibro" EntityType="LibrosModel.PrestamoLibro" />
+          <EntitySet Name="Clientes" EntityType="LibrosModel.Estudiante" />
+          <AssociationSet Name="ClienteAlquilerDeLibro" Association="LibrosModel.ClienteAlquilerDeLibro">
+            <End Role="Cliente" EntitySet="Clientes" />
+            <End Role="AlquilerDeLibro" EntitySet="AlquileresDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="CopiaDeLibroAlquilerDeLibro" Association="LibrosModel.CopiaDeLibroAlquilerDeLibro">
+            <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+            <End Role="AlquilerDeLibro" EntitySet="AlquileresDeLibro" />
+          </AssociationSet>
+          <AssociationSet Name="LibroCopiaDeLibro" Association="LibrosModel.LibroCopiaDeLibro">
+            <End Role="Libro" EntitySet="Libros" />
+            <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+          </AssociationSet>
+          <FunctionImport Name="usp_BuscarCliente" ReturnType="Collection(LibrosModel.usp_BuscarCliente_Result)">
+            <Parameter Name="Nom" Mode="In" Type="String" />
+            <Parameter Name="Ape" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_ObtenerAlqClte" ReturnType="Collection(LibrosModel.usp_ObtenerAlqClte_Result)">
+            <Parameter Name="idCliente" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Materia">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="Libro" Relationship="LibrosModel.MateriaLibro" FromRole="Materia" ToRole="Libro" />
+        </EntityType>
+        <EntityType Name="Idioma">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" Nullable="false" FixedLength="false" MaxLength="50" Unicode="false" />
+          <NavigationProperty Name="Libro" Relationship="LibrosModel.IdiomaLibro" FromRole="Idioma" ToRole="Libro" />
+        </EntityType>
+        <EntityType Name="Editorial">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="Libro" Relationship="LibrosModel.EditorialLibro" FromRole="Editorial" ToRole="Libro" />
+        </EntityType>
+        <EntityType Name="EstadoLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.EstadoDelLibroCopiaDeLibro" FromRole="EstadoDelLibro" ToRole="CopiaDeLibro" />
+        </EntityType>
+        <EntityType Name="Libro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoDelLibro" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+          <Property Name="Titulo" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="Materia" Relationship="LibrosModel.MateriaLibro" FromRole="Libro" ToRole="Materia" />
+          <Property Name="MateriaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Idioma" Relationship="LibrosModel.IdiomaLibro" FromRole="Libro" ToRole="Idioma" />
+          <Property Name="IdiomaId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Editorial" Relationship="LibrosModel.EditorialLibro" FromRole="Libro" ToRole="Editorial" />
+          <Property Name="EditorialId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="DetalleDeAutor" Relationship="LibrosModel.LibroDetalleDeAutor" FromRole="Libro" ToRole="DetalleDeAutor" />
+          <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.LibroCopiaDeLibro" FromRole="Libro" ToRole="CopiaDeLibro" />
+        </EntityType>
+        <EntityType Name="Autor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="10" FixedLength="true" />
+          <Property Name="NombresDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="30" FixedLength="false" />
+          <Property Name="ApellidosDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="30" FixedLength="false" />
+          <NavigationProperty Name="DetalleDeAutor" Relationship="LibrosModel.AutorDetalleDeAutor" FromRole="Autor" ToRole="DetalleDeAutor" />
+        </EntityType>
+        <Association Name="MateriaLibro">
+          <End Type="LibrosModel.Materia" Role="Materia" Multiplicity="1" />
+          <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Materia">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libro">
+              <PropertyRef Name="MateriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="IdiomaLibro">
+          <End Type="LibrosModel.Idioma" Role="Idioma" Multiplicity="1" />
+          <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Idioma">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libro">
+              <PropertyRef Name="IdiomaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EditorialLibro">
+          <End Type="LibrosModel.Editorial" Role="Editorial" Multiplicity="1" />
+          <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Editorial">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Libro">
+              <PropertyRef Name="EditorialId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="DetalleDeAutor">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="Libro" Relationship="LibrosModel.LibroDetalleDeAutor" FromRole="DetalleDeAutor" ToRole="Libro" />
+          <Property Name="LibroId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Autor" Relationship="LibrosModel.AutorDetalleDeAutor" FromRole="DetalleDeAutor" ToRole="Autor" />
+          <Property Name="AutorId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="LibroDetalleDeAutor">
+          <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="1" />
+          <End Type="LibrosModel.DetalleDeAutor" Role="DetalleDeAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleDeAutor">
+              <PropertyRef Name="LibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AutorDetalleDeAutor">
+          <End Type="LibrosModel.Autor" Role="Autor" Multiplicity="1" />
+          <End Type="LibrosModel.DetalleDeAutor" Role="DetalleDeAutor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Autor">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DetalleDeAutor">
+              <PropertyRef Name="AutorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="CopiaLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NumeroDeCopia" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="EstadoDelLibro" Relationship="LibrosModel.EstadoDelLibroCopiaDeLibro" FromRole="CopiaDeLibro" ToRole="EstadoDelLibro" />
+          <Property Name="EstadoDelLibroId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AlquilerDeLibro" Relationship="LibrosModel.CopiaDeLibroAlquilerDeLibro" FromRole="CopiaDeLibro" ToRole="AlquilerDeLibro" />
+          <NavigationProperty Name="Libro" Relationship="LibrosModel.LibroCopiaDeLibro" FromRole="CopiaDeLibro" ToRole="Libro" />
+          <Property Name="LibroId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="EstadoDelLibroCopiaDeLibro">
+          <End Type="LibrosModel.EstadoLibro" Role="EstadoDelLibro" Multiplicity="1" />
+          <End Type="LibrosModel.CopiaLibro" Role="CopiaDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadoDelLibro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CopiaDeLibro">
+              <PropertyRef Name="EstadoDelLibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PrestamoLibro">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodigoDeAlquiler" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="false" />
+          <Property Name="FechaDelAlquiler" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaEstimadaDevolucion" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaRealDevolucion" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Cliente" Relationship="LibrosModel.ClienteAlquilerDeLibro" FromRole="AlquilerDeLibro" ToRole="Cliente" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.CopiaDeLibroAlquilerDeLibro" FromRole="AlquilerDeLibro" ToRole="CopiaDeLibro" />
+          <Property Name="CopiaDeLibroId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estudiante">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="carnet" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+          <Property Name="NombresDelCliente" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+          <Property Name="ApellidosDelCliente" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+          <NavigationProperty Name="AlquilerDeLibro" Relationship="LibrosModel.ClienteAlquilerDeLibro" FromRole="Cliente" ToRole="AlquilerDeLibro" />
+        </EntityType>
+        <Association Name="ClienteAlquilerDeLibro">
+          <End Type="LibrosModel.Estudiante" Role="Cliente" Multiplicity="1" />
+          <End Type="LibrosModel.PrestamoLibro" Role="AlquilerDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AlquilerDeLibro">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CopiaDeLibroAlquilerDeLibro">
+          <End Type="LibrosModel.CopiaLibro" Role="CopiaDeLibro" Multiplicity="1" />
+          <End Type="LibrosModel.PrestamoLibro" Role="AlquilerDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CopiaDeLibro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AlquilerDeLibro">
+              <PropertyRef Name="CopiaDeLibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibroCopiaDeLibro">
+          <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="1" />
+          <End Type="LibrosModel.CopiaLibro" Role="CopiaDeLibro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libro">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CopiaDeLibro">
+              <PropertyRef Name="LibroId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="usp_BuscarCliente_Result">
+          <Property Type="String" Name="Nombres" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Tipos" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="ClienteId" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="usp_ObtenerAlqClte_Result">
+          <Property Type="String" Name="CodigoDeAlquiler" Nullable="false" MaxLength="3" />
+          <Property Type="DateTime" Name="FechaDelAlquiler" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="FechaEstimadaDevolucion" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="idAlq" Nullable="false" />
+          <Property Type="Int32" Name="idCliente" Nullable="false" />
+          <Property Type="Int32" Name="idCopia" Nullable="false" />
+          <Property Type="Int32" Name="idLibro" Nullable="false" />
+          <Property Type="Int32" Name="NumeroDeCopia" Nullable="false" />
+          <Property Type="String" Name="Titulo" Nullable="false" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibrosModelStoreContainer" CdmEntityContainer="LibrosModelContainer">
+    <EntitySetMapping Name="Materias">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Materia)">
+        <MappingFragment StoreEntitySet="Materias">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="DescripcionDeLaMateria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Idiomas">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Idioma)">
+        <MappingFragment StoreEntitySet="Idiomas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="DescripcionDelIdioma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Editoriales">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Editorial)">
+        <MappingFragment StoreEntitySet="Editoriales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="DescripcionDeLaEditorial" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstadosDelLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.EstadoLibro)">
+        <MappingFragment StoreEntitySet="EstadosDelLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Descripcion" ColumnName="DescripcionEstadoDelLibro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Libros">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Libro)">
+        <MappingFragment StoreEntitySet="Libros">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelLibro" ColumnName="CodigoDelLibro" />
+          <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+          <ScalarProperty Name="MateriaId" ColumnName="MateriaId" />
+          <ScalarProperty Name="IdiomaId" ColumnName="IdiomaId" />
+          <ScalarProperty Name="EditorialId" ColumnName="EditorialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Autores">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Autor)">
+        <MappingFragment StoreEntitySet="Autores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDelAutor" ColumnName="CodigoDelAutor" />
+          <ScalarProperty Name="NombresDelAutor" ColumnName="NombresDelAutor" />
+          <ScalarProperty Name="ApellidosDelAutor" ColumnName="ApellidosDelAutor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetallesDeAutor">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.DetalleDeAutor)">
+        <MappingFragment StoreEntitySet="DetallesDeAutor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LibroId" ColumnName="LibroId" />
+          <ScalarProperty Name="AutorId" ColumnName="AutorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CopiasDeLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.CopiaLibro)">
+        <MappingFragment StoreEntitySet="CopiasDeLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NumeroDeCopia" ColumnName="NumeroDeCopia" />
+          <ScalarProperty Name="EstadoDelLibroId" ColumnName="EstadoDelLibroId" />
+          <ScalarProperty Name="LibroId" ColumnName="LibroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlquileresDeLibro">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.PrestamoLibro)">
+        <MappingFragment StoreEntitySet="AlquileresDeLibro">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CodigoDeAlquiler" ColumnName="CodigoDeAlquiler" />
+          <ScalarProperty Name="FechaDelAlquiler" ColumnName="FechaDelAlquiler" />
+          <ScalarProperty Name="FechaEstimadaDevolucion" ColumnName="FechaEstimadaDevolucion" />
+          <ScalarProperty Name="FechaRealDevolucion" ColumnName="FechaRealDevolucion" />
+          <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+          <ScalarProperty Name="CopiaDeLibroId" ColumnName="CopiaDeLibroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(LibrosModel.Estudiante)">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="carnet" ColumnName="CodigoDelCliente" />
+          <ScalarProperty Name="NombresDelCliente" ColumnName="NombresDelCliente" />
+          <ScalarProperty Name="ApellidosDelCliente" ColumnName="ApellidosDelCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_BuscarCliente" FunctionName="LibrosModel.Store.usp_BuscarCliente">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LibrosModel.usp_BuscarCliente_Result">
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="Tipos" ColumnName="Tipos" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_ObtenerAlqClte" FunctionName="LibrosModel.Store.usp_ObtenerAlqClte">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LibrosModel.usp_ObtenerAlqClte_Result">
+                <ScalarProperty Name="CodigoDeAlquiler" ColumnName="CodigoDeAlquiler" />
+                <ScalarProperty Name="FechaDelAlquiler" ColumnName="FechaDelAlquiler" />
+                <ScalarProperty Name="FechaEstimadaDevolucion" ColumnName="FechaEstimadaDevolucion" />
+                <ScalarProperty Name="idAlq" ColumnName="idAlq" />
+                <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+                <ScalarProperty Name="idCopia" ColumnName="idCopia" />
+                <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+                <ScalarProperty Name="NumeroDeCopia" ColumnName="NumeroDeCopia" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LibrosModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="LibrosModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Materias" EntityType="LibrosModel.Materia" />
+    <EntitySet Name="Idiomas" EntityType="LibrosModel.Idioma" />
+    <EntitySet Name="Editoriales" EntityType="LibrosModel.Editorial" />
+    <EntitySet Name="TiposDeCliente" EntityType="LibrosModel.TipoDeCliente" />
+    <EntitySet Name="EstadosDelLibro" EntityType="LibrosModel.EstadoDelLibro" />
+    <EntitySet Name="Libros" EntityType="LibrosModel.Libro" />
+    <EntitySet Name="Autores" EntityType="LibrosModel.Autor" />
+    <AssociationSet Name="MateriaLibro" Association="LibrosModel.MateriaLibro">
+      <End Role="Materia" EntitySet="Materias" />
+      <End Role="Libro" EntitySet="Libros" />
+    </AssociationSet>
+    <AssociationSet Name="IdiomaLibro" Association="LibrosModel.IdiomaLibro">
+      <End Role="Idioma" EntitySet="Idiomas" />
+      <End Role="Libro" EntitySet="Libros" />
+    </AssociationSet>
+    <AssociationSet Name="EditorialLibro" Association="LibrosModel.EditorialLibro">
+      <End Role="Editorial" EntitySet="Editoriales" />
+      <End Role="Libro" EntitySet="Libros" />
+    </AssociationSet>
+    <EntitySet Name="DetallesDeAutor" EntityType="LibrosModel.DetalleDeAutor" />
+    <AssociationSet Name="LibroDetalleDeAutor" Association="LibrosModel.LibroDetalleDeAutor">
+      <End Role="Libro" EntitySet="Libros" />
+      <End Role="DetalleDeAutor" EntitySet="DetallesDeAutor" />
+    </AssociationSet>
+    <AssociationSet Name="AutorDetalleDeAutor" Association="LibrosModel.AutorDetalleDeAutor">
+      <End Role="Autor" EntitySet="Autores" />
+      <End Role="DetalleDeAutor" EntitySet="DetallesDeAutor" />
+    </AssociationSet>
+    <EntitySet Name="CopiasDeLibro" EntityType="LibrosModel.CopiaDeLibro" />
+    <AssociationSet Name="EstadoDelLibroCopiaDeLibro" Association="LibrosModel.EstadoDelLibroCopiaDeLibro">
+      <End Role="EstadoDelLibro" EntitySet="EstadosDelLibro" />
+      <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+    </AssociationSet>
+    <EntitySet Name="AlquileresDeLibro" EntityType="LibrosModel.AlquilerDeLibro" />
+    <EntitySet Name="Clientes" EntityType="LibrosModel.Cliente" />
+    <AssociationSet Name="ClienteAlquilerDeLibro" Association="LibrosModel.ClienteAlquilerDeLibro">
+      <End Role="Cliente" EntitySet="Clientes" />
+      <End Role="AlquilerDeLibro" EntitySet="AlquileresDeLibro" />
+    </AssociationSet>
+    <AssociationSet Name="TipoDeClienteCliente" Association="LibrosModel.TipoDeClienteCliente">
+      <End Role="TipoDeCliente" EntitySet="TiposDeCliente" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="CopiaDeLibroAlquilerDeLibro" Association="LibrosModel.CopiaDeLibroAlquilerDeLibro">
+      <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+      <End Role="AlquilerDeLibro" EntitySet="AlquileresDeLibro" />
+    </AssociationSet>
+    <AssociationSet Name="LibroCopiaDeLibro" Association="LibrosModel.LibroCopiaDeLibro">
+      <End Role="Libro" EntitySet="Libros" />
+      <End Role="CopiaDeLibro" EntitySet="CopiasDeLibro" />
+    </AssociationSet>
+    <FunctionImport Name="usp_BuscarCliente" ReturnType="Collection(LibrosModel.usp_BuscarCliente_Result)">
+      <Parameter Name="Nom" Mode="In" Type="String" />
+      <Parameter Name="Ape" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ObtenerAlqClte" ReturnType="Collection(LibrosModel.usp_ObtenerAlqClte_Result)">
+      <Parameter Name="idCliente" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Materia">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDeMateria" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="DescripcionDeLaMateria" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+    <NavigationProperty Name="Libro" Relationship="LibrosModel.MateriaLibro" FromRole="Materia" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="Idioma">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDelIdioma" Type="String" Nullable="false" FixedLength="true" MaxLength="3" Unicode="false" />
+    <Property Name="DescripcionDelIdioma" Type="String" Nullable="false" FixedLength="false" MaxLength="50" Unicode="false" />
+    <NavigationProperty Name="Libro" Relationship="LibrosModel.IdiomaLibro" FromRole="Idioma" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="Editorial">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDeLaEditorial" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="DescripcionDeLaEditorial" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+    <NavigationProperty Name="Libro" Relationship="LibrosModel.EditorialLibro" FromRole="Editorial" ToRole="Libro" />
+  </EntityType>
+  <EntityType Name="TipoDeCliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoTipoDeCliente" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="DescripcionTipoDeCliente" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Cliente" Relationship="LibrosModel.TipoDeClienteCliente" FromRole="TipoDeCliente" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="EstadoDelLibro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoEstadoDelLibro" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="DescripcionEstadoDelLibro" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.EstadoDelLibroCopiaDeLibro" FromRole="EstadoDelLibro" ToRole="CopiaDeLibro" />
+  </EntityType>
+  <EntityType Name="Libro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDelLibro" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="Titulo" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+    <NavigationProperty Name="Materia" Relationship="LibrosModel.MateriaLibro" FromRole="Libro" ToRole="Materia" />
+    <Property Name="MateriaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Idioma" Relationship="LibrosModel.IdiomaLibro" FromRole="Libro" ToRole="Idioma" />
+    <Property Name="IdiomaId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Editorial" Relationship="LibrosModel.EditorialLibro" FromRole="Libro" ToRole="Editorial" />
+    <Property Name="EditorialId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="DetalleDeAutor" Relationship="LibrosModel.LibroDetalleDeAutor" FromRole="Libro" ToRole="DetalleDeAutor" />
+    <Property Name="ISBN" Type="String" Nullable="false" Unicode="false" MaxLength="30" FixedLength="true" />
+    <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.LibroCopiaDeLibro" FromRole="Libro" ToRole="CopiaDeLibro" />
+  </EntityType>
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="10" FixedLength="true" />
+    <Property Name="NombresDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="30" FixedLength="false" />
+    <Property Name="ApellidosDelAutor" Type="String" Nullable="false" Unicode="false" MaxLength="30" FixedLength="false" />
+    <NavigationProperty Name="DetalleDeAutor" Relationship="LibrosModel.AutorDetalleDeAutor" FromRole="Autor" ToRole="DetalleDeAutor" />
+  </EntityType>
+  <Association Name="MateriaLibro">
+    <End Type="LibrosModel.Materia" Role="Materia" Multiplicity="1" />
+    <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="MateriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="IdiomaLibro">
+    <End Type="LibrosModel.Idioma" Role="Idioma" Multiplicity="1" />
+    <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Idioma">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="IdiomaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EditorialLibro">
+    <End Type="LibrosModel.Editorial" Role="Editorial" Multiplicity="1" />
+    <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Editorial">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Libro">
+        <PropertyRef Name="EditorialId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetalleDeAutor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Libro" Relationship="LibrosModel.LibroDetalleDeAutor" FromRole="DetalleDeAutor" ToRole="Libro" />
+    <Property Name="LibroId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Autor" Relationship="LibrosModel.AutorDetalleDeAutor" FromRole="DetalleDeAutor" ToRole="Autor" />
+    <Property Name="AutorId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="LibroDetalleDeAutor">
+    <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="1" />
+    <End Type="LibrosModel.DetalleDeAutor" Role="DetalleDeAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Libro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleDeAutor">
+        <PropertyRef Name="LibroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AutorDetalleDeAutor">
+    <End Type="LibrosModel.Autor" Role="Autor" Multiplicity="1" />
+    <End Type="LibrosModel.DetalleDeAutor" Role="DetalleDeAutor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleDeAutor">
+        <PropertyRef Name="AutorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CopiaDeLibro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroDeCopia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="EstadoDelLibro" Relationship="LibrosModel.EstadoDelLibroCopiaDeLibro" FromRole="CopiaDeLibro" ToRole="EstadoDelLibro" />
+    <Property Name="EstadoDelLibroId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AlquilerDeLibro" Relationship="LibrosModel.CopiaDeLibroAlquilerDeLibro" FromRole="CopiaDeLibro" ToRole="AlquilerDeLibro" />
+    <NavigationProperty Name="Libro" Relationship="LibrosModel.LibroCopiaDeLibro" FromRole="CopiaDeLibro" ToRole="Libro" />
+    <Property Name="LibroId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="EstadoDelLibroCopiaDeLibro">
+    <End Type="LibrosModel.EstadoDelLibro" Role="EstadoDelLibro" Multiplicity="1" />
+    <End Type="LibrosModel.CopiaDeLibro" Role="CopiaDeLibro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadoDelLibro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CopiaDeLibro">
+        <PropertyRef Name="EstadoDelLibroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="AlquilerDeLibro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDeAlquiler" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="false" />
+    <Property Name="FechaDelAlquiler" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaEstimadaDevolucion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaRealDevolucion" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Cliente" Relationship="LibrosModel.ClienteAlquilerDeLibro" FromRole="AlquilerDeLibro" ToRole="Cliente" />
+    <Property Name="ClienteId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CopiaDeLibro" Relationship="LibrosModel.CopiaDeLibroAlquilerDeLibro" FromRole="AlquilerDeLibro" ToRole="CopiaDeLibro" />
+    <Property Name="CopiaDeLibroId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodigoDelCliente" Type="String" Nullable="false" Unicode="false" MaxLength="3" FixedLength="true" />
+    <Property Name="NombresDelCliente" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+    <Property Name="ApellidosDelCliente" Type="String" Nullable="false" Unicode="false" MaxLength="50" FixedLength="false" />
+    <NavigationProperty Name="AlquilerDeLibro" Relationship="LibrosModel.ClienteAlquilerDeLibro" FromRole="Cliente" ToRole="AlquilerDeLibro" />
+    <NavigationProperty Name="TipoDeCliente" Relationship="LibrosModel.TipoDeClienteCliente" FromRole="Cliente" ToRole="TipoDeCliente" />
+    <Property Name="TipoDeClienteId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteAlquilerDeLibro">
+    <End Type="LibrosModel.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="LibrosModel.AlquilerDeLibro" Role="AlquilerDeLibro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlquilerDeLibro">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TipoDeClienteCliente">
+    <End Type="LibrosModel.TipoDeCliente" Role="TipoDeCliente" Multiplicity="1" />
+    <End Type="LibrosModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDeCliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="TipoDeClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CopiaDeLibroAlquilerDeLibro">
+    <End Type="LibrosModel.CopiaDeLibro" Role="CopiaDeLibro" Multiplicity="1" />
+    <End Type="LibrosModel.AlquilerDeLibro" Role="AlquilerDeLibro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CopiaDeLibro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AlquilerDeLibro">
+        <PropertyRef Name="CopiaDeLibroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LibroCopiaDeLibro">
+    <End Type="LibrosModel.Libro" Role="Libro" Multiplicity="1" />
+    <End Type="LibrosModel.CopiaDeLibro" Role="CopiaDeLibro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Libro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CopiaDeLibro">
+        <PropertyRef Name="LibroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="usp_BuscarCliente_Result">
+    <Property Type="String" Name="Nombres" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Tipos" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="ClienteId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_ObtenerAlqClte_Result">
+    <Property Type="String" Name="CodigoDeAlquiler" Nullable="false" MaxLength="3" />
+    <Property Type="DateTime" Name="FechaDelAlquiler" Nullable="false" Precision="23" />
+    <Property Type="DateTime" Name="FechaEstimadaDevolucion" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="idAlq" Nullable="false" />
+    <Property Type="Int32" Name="idCliente" Nullable="false" />
+    <Property Type="Int32" Name="idCopia" Nullable="false" />
+    <Property Type="Int32" Name="idLibro" Nullable="false" />
+    <Property Type="Int32" Name="NumeroDeCopia" Nullable="false" />
+    <Property Type="String" Name="Titulo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+</Schema>

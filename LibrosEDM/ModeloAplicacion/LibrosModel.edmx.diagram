@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ca3a4448f0b4e7fb3c1ed7198d0bd37" Name="Diagram1" ZoomLevel="92" DisplayType="true" >
+        <EntityTypeShape EntityType="LibrosModel.Materia" Width="1.875" PointX="1.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.Idioma" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.Editorial" Width="1.5" PointX="3.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.EstadoLibro" Width="1.5" PointX="1.875" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.Libro" Width="1.5" PointX="4.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.Autor" Width="1.5" PointX="9.375" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="LibrosModel.MateriaLibro" />
+        <AssociationConnector Association="LibrosModel.IdiomaLibro" />
+        <AssociationConnector Association="LibrosModel.EditorialLibro" />
+        <EntityTypeShape EntityType="LibrosModel.DetalleDeAutor" Width="1.5" PointX="7.25" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="LibrosModel.LibroDetalleDeAutor" />
+        <AssociationConnector Association="LibrosModel.AutorDetalleDeAutor" />
+        <EntityTypeShape EntityType="LibrosModel.CopiaLibro" Width="1.5" PointX="4.375" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="LibrosModel.EstadoDelLibroCopiaDeLibro" />
+        <EntityTypeShape EntityType="LibrosModel.PrestamoLibro" Width="1.75" PointX="6.875" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibrosModel.Estudiante" Width="2.25" PointX="9.125" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="LibrosModel.ClienteAlquilerDeLibro" />
+        <AssociationConnector Association="LibrosModel.CopiaDeLibroAlquilerDeLibro" />
+        <AssociationConnector Association="LibrosModel.LibroCopiaDeLibro" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
